@@ -1,49 +1,91 @@
-p the Copy code button, then go back to GitHub and paste it into the large editor box.
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Punjabi Suits | Ethnic Wear</title>
+
+  <title>Punjabi Suits | Elegant Ethnic Wear</title>
+
   <style>
-    * { box-sizing: border-box; }
-    body {
+    * {
+      box-sizing: border-box;
       margin: 0;
-      font-family: Arial, sans-serif;
-      background: #fff9f5;
-      color: #40232c;
+      padding: 0;
     }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #fffaf6;
+      color: #40232c;
+      line-height: 1.6;
+    }
+
     header {
       background: #762344;
       color: white;
       text-align: center;
-      padding: 25px 12px;
+      padding: 28px 12px;
     }
-    header h1 { margin: 0; font-size: 32px; }
-    header p { margin-bottom: 0; }
+
+    header h1 {
+      font-family: Georgia, serif;
+      font-size: 34px;
+      letter-spacing: 1px;
+    }
+
     nav {
       background: #4b172d;
-      padding: 13px;
+      padding: 13px 5px;
       text-align: center;
     }
+
     nav a {
       color: white;
       text-decoration: none;
-      margin: 0 12px;
+      margin: 0 9px;
+      font-size: 14px;
     }
+
     .hero {
       text-align: center;
       padding: 38px 15px;
       background: #f5dce4;
     }
-    .hero h2 { font-size: 30px; margin: 8px; }
-    .hero p { line-height: 1.6; }
+
+    .hero h2 {
+      font-family: Georgia, serif;
+      font-size: 27px;
+      margin-bottom: 10px;
+      color: #762344;
+    }
+
+    .hero p {
+      margin-bottom: 18px;
+    }
+
+    .shop-button {
+      display: inline-block;
+      background: #762344;
+      color: white;
+      padding: 11px 18px;
+      border-radius: 5px;
+      text-decoration: none;
+      margin-top: 8px;
+    }
+
     .shop {
-      padding: 25px 15px;
+      padding: 30px 15px;
       text-align: center;
     }
+
+    .shop h2,
+    .about h2,
+    .contact h2 {
+      color: #762344;
+      font-family: Georgia, serif;
+      margin-bottom: 18px;
+    }
+
     .products {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -51,44 +93,68 @@ p the Copy code button, then go back to GitHub and paste it into the large edito
       max-width: 950px;
       margin: 20px auto;
     }
+
     .product {
       background: white;
-      border-radius: 12px;
+      border: 1px solid #ead6dc;
+      border-radius: 8px;
       overflow: hidden;
       box-shadow: 0 3px 12px #00000012;
-      padding-bottom: 18px;
+      padding: 12px;
     }
-    .photo {
-      height: 220px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: #f2e5e8;
-      color: #762344;
-      padding: 15px;
-    }
-    .photo img {
+
+    .product img {
       width: 100%;
-      height: 100%;
-      object-fit: cover;
+      height: 280px;
+      object-fit: contain;
+      background: #fffaf6;
+      display: block;
     }
-    .product h3 { margin-bottom: 8px; }
-    .price { font-size: 20px; color: #762344; font-weight: bold; }
+
+    .product h3 {
+      margin: 12px 0 6px;
+      color: #762344;
+    }
+
+    .price {
+      font-size: 22px;
+      color: #762344;
+      font-weight: bold;
+      margin: 5px;
+    }
+
+    .size {
+      margin: 6px 0;
+    }
+
     .order {
-      display: inline-block;
-      background: #16864a;
+      display: block;
+      background: #168344;
       color: white;
-      padding: 11px 18px;
-      border-radius: 25px;
+      padding: 11px;
+      border-radius: 5px;
       text-decoration: none;
-      margin-top: 8px;
+      margin-top: 12px;
     }
+
     .about {
       background: #f5dce4;
       text-align: center;
       padding: 30px 18px;
       line-height: 1.7;
     }
+
+    .about p,
+    .contact p {
+      max-width: 650px;
+      margin: 8px auto;
+    }
+
+    .contact {
+      text-align: center;
+      padding: 30px 18px;
+    }
+
     footer {
       background: #4b172d;
       color: white;
@@ -97,71 +163,120 @@ p the Copy code button, then go back to GitHub and paste it into the large edito
     }
   </style>
 </head>
+
 <body>
+
   <header>
     <h1>Punjabi Suits</h1>
     <p>Elegance in Every Thread ✨</p>
+    <p>Tradition • Beauty • Comfort</p>
   </header>
 
   <nav>
     <a href="#home">Home</a>
     <a href="#shop">Collection</a>
     <a href="#about">About Us</a>
+    <a href="#contact">Contact</a>
   </nav>
 
   <section class="hero" id="home">
     <h2>Discover Your Ethnic Elegance</h2>
-    <p>Beautiful suits for beautiful moments.</p>
-    <a class="order"
-       href="https://wa.me/918790371067?text=Hello%20Punjabi%20Suits%2C%20I%20want%20to%20see%20your%20collection."
-       target="_blank">Explore on WhatsApp</a>
+    <p>Beautiful suits for your beautiful moments.</p>
+    <a class="shop-button" href="#shop">Explore Collection</a>
   </section>
 
   <section class="shop" id="shop">
-    <h2>Our Collection</h2>
-    <p>Add your own dress photos and prices here.</p>
+    <h2>Our Dress Collection</h2>
+    <p>Find your favourite style at an affordable price.</p>
 
     <div class="products">
+
+      <!-- DRESS 1 -->
       <div class="product">
-        
-          
-          <img
-    src="17922926090828658225425610816118.jpg"
-    alt="Punjabi suit"
-    style="width:100%; height:220px; object-fit:contain;"
-  >
-          
-         
-        <h3>Elegant Suit Set</h3>
+        <img
+          src="17922926090828658225425610816118.jpg"
+          alt="Pakistani printed cord set"
+        >
+        <h3>Pakistani Cord Set</h3>
+        <p>Printed design with palazzo pants.</p>
         <p class="price">₹600</p>
-        <a class="order"
-           href="https://wa.me/918790371067?text=Hello%2C%20I%20am%20interested%20in%20the%20Elegant%20Suit%20Set."
-           target="_blank">Order on WhatsApp</a>
+        <p class="size">Sizes: L, XL, 2XL</p>
+        <a
+          class="order"
+          href="https://wa.me/918790371067?text=Hello%20Punjabi%20Suits%2C%20I%20want%20to%20order%20the%20Pakistani%20Cord%20Set%20for%20Rs%20600."
+          target="_blank"
+          rel="noopener"
+        >Order on WhatsApp</a>
       </div>
 
+      <!-- DRESS 2 -->
       <div class="product">
-        <div class="product">
- 
-        <h3>Punjabi Suit</h3>
-        <p class="price">Contact for price</p>
-        <a class="order"
-           href="https://wa.me/918790371067?text=Hello%2C%20please%20share%20the%20Punjabi%20Suit%20collection."
-           target="_blank">Enquire on WhatsApp</a>
+        <img
+          src="dress2.jpg"
+          alt="Elegant embroidered suit"
+        >
+        <h3>Elegant Embroidered Suit</h3>
+        <p>Beautiful thread embroidery and stylish design.</p>
+        <p class="price">₹600</p>
+        <p class="size">Size: XL</p>
+        <a
+          class="order"
+          href="https://wa.me/918790371067?text=Hello%20Punjabi%20Suits%2C%20I%20want%20to%20order%20the%20Elegant%20Embroidered%20Suit."
+          target="_blank"
+          rel="noopener"
+        >Order on WhatsApp</a>
       </div>
+
+      <!-- DRESS 3 -->
+      <div class="product">
+        <img
+          src="dress3.jpg"
+          alt="Printed palazzo suit"
+        >
+        <h3>Printed Palazzo Suit</h3>
+        <p>Comfortable cord set with a graceful look.</p>
+        <p class="price">₹600</p>
+        <p class="size">Size: 2XL</p>
+        <a
+          class="order"
+          href="https://wa.me/918790371067?text=Hello%20Punjabi%20Suits%2C%20I%20want%20to%20order%20the%20Printed%20Palazzo%20Suit."
+          target="_blank"
+          rel="noopener"
+        >Order on WhatsApp</a>
+      </div>
+
     </div>
   </section>
 
   <section class="about" id="about">
     <h2>About Punjabi Suits</h2>
-    <p>Discover stylish ethnic wear for everyday beauty
-    and special occasions. Contact us on WhatsApp to
-    enquire about designs, sizes and availability.</p>
+    <p>
+      Welcome to Punjabi Suits, your destination for beautiful
+      ethnic wear. We bring you elegant designs, traditional charm,
+      and comfortable styles at affordable prices.
+    </p>
+    <p>
+      Choose your favourite dress and contact us directly on WhatsApp
+      to place your order.
+    </p>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <p>Need help with a dress, size, or order?</p>
+    <p>We are happy to help you!</p>
+    <a
+      class="shop-button"
+      href="https://wa.me/918790371067?text=Hello%20Punjabi%20Suits%2C%20I%20have%20a%20question."
+      target="_blank"
+      rel="noopener"
+    >Chat with Us on WhatsApp</a>
   </section>
 
   <footer>
     <p>Punjabi Suits © 2026</p>
     <p>Made with love for ethnic fashion ❤️</p>
   </footer>
-</body>
-  </html>_
 
+</body>
+</html>
